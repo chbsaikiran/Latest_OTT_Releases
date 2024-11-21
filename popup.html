@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OTT Releases</title>
+  <style>
+    body {
+      width: 400px;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      font-size: 18px;
+    }
+    h2 {
+      font-size: 16px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      padding-left: 20px;
+    }
+    #days-input {
+      width: 50px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Recent Releases</h1>
+  
+  <label for="days-input">Number of days to look back:</label>
+  <input type="number" id="days-input" value="30" min="1" max="365">
+  
+  <!-- Add the OTT platform dropdown here -->
+  <label for="ott-select">Choose OTT Platform:</label>
+  <select id="ott-select">
+    <option value="Netflix">Netflix</option>
+    <option value="Prime Video">Prime Video</option>
+    <option value="Hotstar">Hotstar</option>
+  </select>
+
+  <button id="fetch-button">Fetch Releases</button>
+
+  <div class="language-section">
+    <h2>Hindi</h2>
+    <h3>Movies</h3>
+    <ul id="hindi-movie"></ul>
+    <h3>TV Shows</h3>
+    <ul id="hindi-tv"></ul>
+  </div>
+
+  <div class="language-section">
+    <h2>Telugu</h2>
+    <h3>Movies</h3>
+    <ul id="telugu-movie"></ul>
+    <h3>TV Shows</h3>
+    <ul id="telugu-tv"></ul>
+  </div>
+
+  <div class="language-section">
+    <h2>English</h2>
+    <h3>Movies</h3>
+    <ul id="english-movie"></ul>
+    <h3>TV Shows</h3>
+    <ul id="english-tv"></ul>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

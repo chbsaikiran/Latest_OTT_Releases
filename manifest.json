@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "OTT Platform Releases",
+  "version": "1.1",
+  "description": "Shows the releases on Netflix, Hotstar, or Prime for a specified number of days using TMDB API. Max look back is one year (365 days)",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": [
+    "https://api.themoviedb.org/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
